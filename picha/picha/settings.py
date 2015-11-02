@@ -38,6 +38,8 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'djcelery',
+    'photos',
+    'feedback',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -113,3 +115,9 @@ STATICFILES_DIRS = (
 )
 STATIC_ROOT = '/static/'
 STATIC_URL = '/static/'
+
+# Emails
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_HOST = 'localhost'
+EMAIL_PORT = 1025
+DEFAULT_FROM_EMAIL = 'Picha <picha@example.com>'

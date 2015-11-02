@@ -1,5 +1,6 @@
 from django.views.generic.edit import FormView
 from feedback.forms import FeedbackForm
+from feedback.tasks import send_feedback_email_task
 
 
 class FeedbackView(FormView):

@@ -20,7 +20,7 @@
         <div>
           <div id="feedback-modal" class="modal">
             <div class="modal-content">
-              <h4>We <3 feedback</h4>
+              <h4>#TIA feedback</h4>
               <form action="{% url 'feedback' %}" method="post">{% csrf_token %}
                 {{ form.as_p }}
                 <button class="btn waves-effect waves-light" type="submit" name="action">Submit
